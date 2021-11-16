@@ -1,7 +1,7 @@
 package multitreading;
 
 public class HiHelloDemo {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         Thread t1=new Thread(()-> {             //by using lambda expression short the code (Both Tread are similar)
                 for (int i = 1; i <= 5; i++) {
                     System.out.println("Hii");
@@ -33,5 +33,9 @@ public class HiHelloDemo {
 
         t1.start();
         t2.start();
+
+        t1.join();
+        t2.join();
+        System.out.println("Exit");
     }
 }
