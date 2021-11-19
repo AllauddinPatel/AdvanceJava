@@ -6,7 +6,7 @@ public class MultithreadingDemo extends Thread {
         for (int i = 1; i <= 5; i++) {
             System.out.println("Hii");
             try {
-                Thread.sleep(500);// it make sleep the loop
+                Thread.sleep(500);// it make sleep the loop N
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
