@@ -1,6 +1,6 @@
 package multitreading;
 
-public class IntruptedDemo implements Runnable{
+public class IntruptedDemo implements Runnable {
     @Override
     public void run() {
 
@@ -18,6 +18,7 @@ public class IntruptedDemo implements Runnable{
 
 
     public static void main(String[] args) {
+
         IntruptedDemo intruptedDemo = new IntruptedDemo();
         Thread t1 = new Thread(intruptedDemo);
         t1.interrupt();
@@ -25,3 +26,9 @@ public class IntruptedDemo implements Runnable{
         System.out.println(t1.isInterrupted());
     }
 }
+
+/*
+*
+* we can only interrupt the Thread which have Wait or sleep method
+*
+* */

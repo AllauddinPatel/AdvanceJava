@@ -23,8 +23,7 @@ class A extends Thread {
 }
 
 
-
-class B extends Thread{
+class B extends Thread {
     @Override
     public void run() {
         System.out.println("In B Run");
