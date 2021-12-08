@@ -23,7 +23,7 @@ public class ArrayMethod {
     //    list.retainAll(list1);//common value
 
 
-        System.out.println(list);
+        System.out.println(list.size());
 
         }
     }
