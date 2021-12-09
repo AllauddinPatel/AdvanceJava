@@ -18,7 +18,7 @@ public class jdbcDemo {
             String delete="delete from employee where id=2";
 
             String update="update employee set name='Allu' where id=1";
-            int i=statement.executeUpdate(update);
+            int i=statement.executeUpdate(insert);
 
             System.out.println("Row Affected =>"+i);
         } catch (ClassNotFoundException | SQLException e) {
